@@ -2,6 +2,7 @@ $(document).ready(function() {
     $('#about-button').click((e)=> {
         e.preventDefault();
         function aboutComplete() {
+            $('#projects').scrollTop(0);
             $('#about').fadeIn(600);
         }
         $("#landing").fadeOut(600, aboutComplete);
@@ -11,6 +12,7 @@ $(document).ready(function() {
     $("#aboutBack").click((e)=> {
         e.preventDefault();
         function backComplete() {
+            $('#about').offset({top:0})
             $("#landing").fadeIn(600);
         }
         $("#about").fadeOut(600, backComplete);
@@ -19,6 +21,7 @@ $(document).ready(function() {
     $('#skills-button').click((e)=> {
         e.preventDefault();
         function skillsComplete() {
+            $('#skills').offset({top:0})
             $('#skills').fadeIn(600);
         }
         $("#landing").fadeOut(600, skillsComplete);
@@ -27,6 +30,7 @@ $(document).ready(function() {
     $('#projects-button').click((e)=> {
         e.preventDefault();
         function projectsComplete() {
+            $('#projects').offset({top:0})
             $('#projects').fadeIn(600);
         }
         $("#landing").fadeOut(600, projectsComplete);
@@ -35,6 +39,7 @@ $(document).ready(function() {
     $('#contact-button').click((e)=> {
         e.preventDefault();
         function projectsComplete() {
+            $('#contact').offset({top:0})
             $('#contact').fadeIn(600);
         }
         $("#landing").fadeOut(600, projectsComplete);
