@@ -12,7 +12,7 @@ $(document).ready(function() {
     $("#aboutBack").click((e)=> {
         e.preventDefault();
         function backComplete() {
-            $('#about').offset({top:0})
+            $('#landing').offset({top:0})
             $("#landing").fadeIn(600);
         }
         $("#about").fadeOut(600, backComplete);
