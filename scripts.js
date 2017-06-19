@@ -72,13 +72,4 @@ $(document).ready(function() {
         $("#contact").fadeOut(600, backComplete);
     })
 
-	// $('#start-btn').click(()=>{
-	// 	function complete(){
-	// 	$('.second-section').fadeIn(1000);
-	// 	$('.login-form-container').css('display','none');			
-	// 	}
-	// 	$('.first-section').fadeOut(1000,complete);					
-	// 	$('#wrapper_bgndVideo').css('filter','blur(10px)');
-	// });
-
 })
