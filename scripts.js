@@ -48,6 +48,7 @@ $(document).ready(function() {
     $("#skillsBack").click((e)=> {
         e.preventDefault();
         function backComplete() {
+            $('#landing').offset({top:0})
             $("#landing").fadeIn(600);
         }
         $("#skills").fadeOut(600, backComplete);
@@ -56,6 +57,7 @@ $(document).ready(function() {
     $("#projectsBack").click((e)=> {
         e.preventDefault();
         function backComplete() {
+            $('#landing').offset({top:0})
             $("#landing").fadeIn(600);
         }
         $("#projects").fadeOut(600, backComplete);
@@ -64,6 +66,7 @@ $(document).ready(function() {
     $("#contactBack").click((e)=> {
         e.preventDefault();
         function backComplete() {
+            $('#landing').offset({top:0})
             $("#landing").fadeIn(600);
         }
         $("#contact").fadeOut(600, backComplete);
