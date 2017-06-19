@@ -390,9 +390,6 @@ button {
 }
 
 /* line 329, ../compass/sass/styles.scss */
-.fancybox-slide--video .fancybox-content {
-  width: 800px;
-  height: 600px;
-  max-width: 80%;
-  max-height: 80%;
+#hello-img, #project-img {
+  border-radius: 15%;
 }
