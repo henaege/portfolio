@@ -12,7 +12,7 @@ $(document).ready(function() {
     $("#aboutBack").click((e)=> {
         e.preventDefault();
         function backComplete() {
-            $('#about').offset({top:0})
+            $('#landing').offset({top:0})
             $("#landing").fadeIn(600);
         }
         $("#about").fadeOut(600, backComplete);
@@ -71,14 +71,5 @@ $(document).ready(function() {
         }
         $("#contact").fadeOut(600, backComplete);
     })
-
-	// $('#start-btn').click(()=>{
-	// 	function complete(){
-	// 	$('.second-section').fadeIn(1000);
-	// 	$('.login-form-container').css('display','none');			
-	// 	}
-	// 	$('.first-section').fadeOut(1000,complete);					
-	// 	$('#wrapper_bgndVideo').css('filter','blur(10px)');
-	// });
 
 })
