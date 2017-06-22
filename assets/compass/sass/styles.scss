@@ -3,7 +3,7 @@
 @import 'homemade_grid';
 @import 'header';
 @import 'footer';
-
+@import '../../../materialize/css/materialize.css';
 html {
   overflow: hidden;
   height: 100%;
@@ -20,6 +20,7 @@ body {
     width: 100vw;
     overflow: auto;
 }
+
 a {
     color: #C2C5BB;
     text-decoration: none;
@@ -48,6 +49,10 @@ h2 {
     border-radius: 15px;
 }
 
+.landing {
+    
+}
+
 .nested {
     padding: 15px;
     width: 100%
@@ -69,7 +74,7 @@ h2 {
 *, 
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     align-self: center;
 }
 
@@ -204,6 +209,7 @@ p {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    clear: both;
 }
 
 @media (min-width: 400px) {
@@ -229,10 +235,7 @@ h3 {
   margin-bottom: 1rem;
 }
 
-input:focus,
-textarea:focus {
-  outline: 3px solid gold;
-}
+
 
 input,
 textarea,
@@ -327,7 +330,7 @@ button {
 }
 
 #hello-img, #project-img {
-    border-radius: 15%;
+    border-radius: 30%;
 }
 
 // .fancybox-slide--video .fancybox-content {

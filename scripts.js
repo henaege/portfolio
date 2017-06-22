@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+     $(".button-collapse").sideNav({
+         closeOnClick: true
+     });
+
     $('#about-button').click((e)=> {
         e.preventDefault();
         function aboutComplete() {
@@ -6,6 +11,15 @@ $(document).ready(function() {
             $('#about').fadeIn(600);
         }
         $("#landing").fadeOut(600, aboutComplete);
+            
+    })
+    $('#about-button1').click((e)=> {
+        e.preventDefault();
+        function aboutComplete() {
+            $('#projects').scrollTop(0);
+            $('#about').fadeIn(600);
+        }
+        $("#landing, #skills, #projects, #contact").fadeOut(600, aboutComplete);
             
     })
 
@@ -26,6 +40,14 @@ $(document).ready(function() {
         }
         $("#landing").fadeOut(600, skillsComplete);
     });
+    $('#skills-button1').click((e)=> {
+        e.preventDefault();
+        function skillsComplete() {
+            $('#skills').offset({top:0})
+            $('#skills').fadeIn(600);
+        }
+        $("#landing, #about, #projects, #contact").fadeOut(600, skillsComplete);
+    });
 
     $('#projects-button').click((e)=> {
         e.preventDefault();
@@ -35,6 +57,14 @@ $(document).ready(function() {
         }
         $("#landing").fadeOut(600, projectsComplete);
     });
+    $('#projects-button1').click((e)=> {
+        e.preventDefault();
+        function projectsComplete() {
+            $('#projects').offset({top:0})
+            $('#projects').fadeIn(600);
+        }
+        $("#landing, #about, #skills, #contact").fadeOut(600, projectsComplete);
+    });
 
     $('#contact-button').click((e)=> {
         e.preventDefault();
@@ -43,6 +73,14 @@ $(document).ready(function() {
             $('#contact').fadeIn(600);
         }
         $("#landing").fadeOut(600, projectsComplete);
+    });
+    $('#contact-button1').click((e)=> {
+        e.preventDefault();
+        function projectsComplete() {
+            $('#contact').offset({top:0})
+            $('#contact').fadeIn(600);
+        }
+        $("#landing, #about, #skills, #project").fadeOut(600, projectsComplete);
     });
 
     $("#skillsBack").click((e)=> {
@@ -70,6 +108,17 @@ $(document).ready(function() {
             $("#landing").fadeIn(600);
         }
         $("#contact").fadeOut(600, backComplete);
+    })
+
+    $("#home-button").click((e)=> {
+        e.preventDefault();
+        function backComplete() {
+            $("#landing").offset({top:0});
+            $("#landing").fadeIn(600);
+            $("#landing").css({"position":"relative", "top": "0px"});
+        }
+        $("#contact, #about, #skills, #projects").fadeOut(600, backComplete);
+        
     })
 
 })
